@@ -1,0 +1,31 @@
+<div class="container add-company-container">
+    <div>
+      <mat-card>
+        <h3 style="text-align: center">Update Company Details</h3>
+        <form [formGroup]="companyForm">
+        <div>
+          <mat-form-field appearance="fill" class="form-element">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" />
+          </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="fill" class="form-element">
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="email"/>
+            </mat-form-field>
+          </div>
+          <div>
+                <mat-form-field appearance="fill" class="form-element">
+                  <mat-label>Location</mat-label>
+                  <input matInput formControlName="location"/>
+                </mat-form-field>
+              </div>
+            
+                <div>
+                    <button mat-raised-button color="primary"  (click)="update()">Update</button>
+                  </div>
+                </form>
+            </mat-card>
+              </div>
+            </div>
